@@ -1,16 +1,17 @@
 *{
     margin:  0;
     padding: 0;
-    box-sizing: border-box ;
+    box-sizing:content-box ;
 }
 .navbar{
-    display: flex;
-    align-items: center;
-    padding: 25px;
+    display:flex;
+    align-items:center;
+    padding: 1px;
 }
 nav{
     flex: 1;
     text-align: right;
+    margin-top: 1px;
 }
 nav ul{
     display: inline-block;
@@ -28,7 +29,8 @@ a{
 .container{
     max-width: 1300px;
     margin: auto;
-    padding-left: 25px;
+    margin-top: -40px;
+    padding-left: 100px;
     padding-right: 25px;
 }
 .row{
@@ -44,7 +46,7 @@ a{
     display: grid;
     align-content: end;
     justify-content: end;
-    background: #e8e8e8;
+             /* here is the color-------------------*/
      padding: 50px;
 }
 
@@ -56,7 +58,7 @@ a{
     padding:10px;
     min-width: 200px;
     margin-bottom: 50px;
-    transition: transform 0.5s ;
+    transition: transform 0.75s ;
 }
 
 .col img{
@@ -106,7 +108,9 @@ h4{
 }
 .col2 img{
   max-width: 100%;
-  padding: 50px 0;
+  padding: 10px 0;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 .col2 h1{
   font-size: 50px;
@@ -122,12 +126,21 @@ h4{
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
+  transition: background 0.7s ;
+}
+.bth:hover{
+  background: #333;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  align-content: end;
+  justify-content: end;
+  background: radial-gradient(#B2BEB5,#6082B6); /*Bg color here-----------------*/
+  padding: 50px;
 }
 .header{
-  background: radial-gradient(#B2BEB5,#36454F)
-}
-.header .row{
-  margin-top: 70px;
+  margin-left: -190px;
 }
 /* ------------------------Footer ------------------------------------------*/
 
@@ -148,18 +161,10 @@ footer{
   align-content: end;
   justify-content: end;
 }
-body {
-  min-height: 100vh;
-  display: grid;
-  align-content: end;
-  justify-content: end;
-  background: #e8e8e8;
-  padding: 50px;
-}
 
 footer {
   position: relative;
-  width: 100%;
+  margin-left: 180px;
   height: auto;
   padding: 40px 50px;
   background: #fff;
@@ -202,7 +207,7 @@ footer .wrapper .box .icons {
 footer .wrapper .box .icons a {
   width: 36px;
   height: 36px;
-  background: #333;
+  background: #807f7f;
   border-radius: 5px;
   display: grid;
   place-items: center;
@@ -210,7 +215,7 @@ footer .wrapper .box .icons a {
 
 footer .wrapper .box .icons a i {
   font-size: 18px;
-  color: #fff;
+  color: #0a0909;
 }
 
 footer .wrapper .links a {
@@ -242,7 +247,8 @@ footer .wrapper .contact li a {
 }
 
 .copyright {
-  width: 100%;
+  
+  margin-left: 180px;
   background: #fff;
   padding: 20px 100px 30px;
   text-align: center;
